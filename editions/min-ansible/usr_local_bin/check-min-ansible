@@ -8,6 +8,10 @@ echo '###########################'
 echo "BEGIN $ABBREV sanity checks"
 echo '###########################'
 
+echo '------'
+echo 'locale'
+locale
+
 echo '-----------------'
 echo 'ansible --version'
 ansible --version
