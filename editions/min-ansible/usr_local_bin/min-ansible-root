@@ -39,7 +39,8 @@ wait
 sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen
 wait
 locale-gen
-export LANG=en_US.UTF-8
+export LANG='en_US.UTF-8'
+export LANGUAGE='en_US.UTF-8'
 wait
 echo ''
 echo '------'
