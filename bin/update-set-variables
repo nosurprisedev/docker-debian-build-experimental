@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -eo pipefail
+
+ABBREV=`cat tmp/params/abbrev.txt`
+CODE_NAME=`cat tmp/params/code_name.txt`
+TIME_STAMP=`cat tmp/params/time_stamp.txt`
+DIR_ROOT=`pwd`
+
+update-bin-set-variables () {
+  STRING1="$1"
+  STRING2="$2"
+  bin/replace-string-in-file "$STRING1" "$STRING2" 'tmp/bin/set-variables'
+}
+
+update-bin-set-variables '<ABBREV>' "$ABBREV"
+update-bin-set-variables '<CODE_NAME>' "$CODE_NAME"
+update-bin-set-variables '<DIR_ROOT>' "$DIR_ROOT"
+update-bin-set-variables '<TIME_STAMP>' "$TIME_STAMP"

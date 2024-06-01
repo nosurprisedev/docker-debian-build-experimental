@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -eo pipefail
+
+ABBREV='<ABBREV>'
+OWNER='nosurprisedev'
+CODE_NAME='<CODE_NAME>'
+DISTRO='debian'
+DIR_ROOT='<DIR_ROOT>'
+DIR_BUILD="<DIR_ROOT>/tmp/$ABBREV/$CODE_NAME"
+REGULAR_USER='winner'
+TIME_STAMP='<TIME_STAMP>'
+DOCKER_IMAGE="ghcr.io/$OWNER/image-$DISTRO-$CODE_NAME-$ABBREV"

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -eo pipefail
+
+ABBREV='<ABBREV>'
+
+echo '##########################'
+echo "BEGIN $ABBREV-user actions"
+echo '##########################'
+
+echo 'Nothing to do here'
+
+echo '##############################'
+echo "FINISHED $ABBREV-user1 actions"
+echo '##############################'

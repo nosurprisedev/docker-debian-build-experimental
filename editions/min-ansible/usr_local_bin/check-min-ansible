@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -eo pipefail
+
+ABBREV='<ABBREV>'
+
+echo '###########################'
+echo "BEGIN $ABBREV sanity checks"
+echo '###########################'
+
+echo '-----------------'
+echo 'ansible --version'
+ansible --version
+
+
+echo '##############################'
+echo "FINISHED $ABBREV sanity checks"
+echo '##############################'
