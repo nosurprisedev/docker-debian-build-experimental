@@ -41,13 +41,24 @@ wait
 locale-gen
 export LANG=en_US.UTF-8
 wait
+echo ''
+echo '------'
+echo 'locale'
+locale
+echo ''
 echo '-----------------------------------------------'
 echo 'FINISHED: installing UTF-8 (needed for Ansible)'
 echo '-----------------------------------------------'
 wait
 
 # Install Ansible
+echo '---------------------------------'
+echo 'BEGIN: apt-get install -y ansible'
+echo '---------------------------------'
 apt-get install -y ansible
+echo '------------------------------------'
+echo 'FINISHED: apt-get install -y ansible'
+echo '------------------------------------'
 
 echo '#############################'
 echo "FINISHED $ABBREV-root actions"
